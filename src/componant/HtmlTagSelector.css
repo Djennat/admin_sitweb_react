@@ -1,8 +1,8 @@
 /* Container principal */
 .container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -71,6 +71,7 @@ label {
   background-color: #f0f0f0;
   margin-left: 10px;
   transition: background-color 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .toggle-button:hover {
