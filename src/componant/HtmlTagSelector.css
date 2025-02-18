@@ -1,0 +1,188 @@
+/* Container principal */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Section de sélection des tags (gauche) */
+.tag-selector {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Titre principal */
+.search-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label pour les champs */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Styles des inputs */
+.search-input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Conteneur de la barre de recherche avec le bouton */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Bouton pour afficher/masquer le menu */
+.toggle-button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #ddd;
+}
+
+/* Menu déroulant des tags */
+.menu {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  width: 28%;
+  margin-top: 5px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Élément de menu */
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Message si aucun tag n'est trouvé */
+.no-tags {
+  padding: 10px;
+  color: #888;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Conteneur des tags sélectionnés */
+.selected-tags {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f8f5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selected-tags h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Liste des tags sélectionnés */
+.selected-tags ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.selected-tags li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.selected-tags li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Bouton "X" pour supprimer un tag */
+.remove-tag-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-tag-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Bouton pour créer le fichier XML */
+.create-xml-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.create-xml-button:hover {
+  background-color: #45a049;
+}
